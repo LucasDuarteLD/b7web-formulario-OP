@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/manga-one-piece-wallpaper-preview.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: rgb(114, 114, 114);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adicione esta linha para centralizar verticalmente */
+}
+
+form h1 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+form {
+    font-family: "Century Old Style", sans-serif;
+}
+
+article form {
+    display: flex;
+    flex-direction: column;
+    background-color: #DECAB1;
+    padding: 40px;
+    border-radius: 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.155);
+    max-width: 390px;
+}
+
+form label {
+    font-size: 1.2em;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    margin-top: 5px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+form input:focus {
+    outline: none;
+    color: black;
+}
+
+.btn {
+    display: flex;
+    /* justify-content: end; */
+}
+
+.btn button {
+    font-size: 1.1em;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn button:hover {
+    background-color: #196e2d;
+    cursor: pointer;
+}
+
+.ml-04 {
+    margin-left: 0.4em;
+}
+
+audio {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:630px) {
+
+    article form {
+        width: 290px;
+        padding: 25px;
+    }
+
+    form h1 {
+        font-size: 2.1em;
+    }
+
+    form label {
+        font-size: 0.8em;
+    }
+
+    .input-label {
+        margin-top: 10px;
+    }
+     .input-label input{
+        margin-top: 0;
+     }
+    audio {
+        width: 250px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    article form {
+        width: 240px;
+    }
+
+
+}

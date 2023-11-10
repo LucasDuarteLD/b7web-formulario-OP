@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>governo Mundial</title>
+    <link rel="stylesheet" href="assets/css/gv.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <img width="900" src="assets/images/one-piece-manga-gorosei-postcover.jpg" alt="">
+            <div class="ultimato">
+                <!-- <p>Você sabe dmas   </p> -->
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+
+    window.onload = adicionarParagrafo;
+
+    function adicionarParagrafo() {
+
+
+        const urlGet = new URLSearchParams(window.location.search);
+
+        var p = document.createElement("p");
+
+        const nome = urlGet.get('nome');
+        const bando = urlGet.get('bando');
+
+        p.textContent = `Você é um perigo para o governo mundial, ${nome}, vamos atrás de você e dos seu bando, ${bando}.`;
+
+        p.textContent = `Você se tornou uma ameaça ao Governo Mundial, ${nome}. Estamos determinados a caçar você e sua tripulação, os/as ${bando}.`;
+        var ultimato = document.querySelector('.ultimato');
+
+        ultimato.innerHTML = "";
+        ultimato.appendChild(p);
+    }
+</script>
+
+</html>
